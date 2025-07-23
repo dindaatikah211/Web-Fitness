@@ -74,7 +74,7 @@ nav ul li a:hover {
 
 .hero-img {
   width: 100%;
-  height: 330px;
+  height: 340px;
   object-fit: cover;
   border-radius: 18px;
   margin-top: 1.5rem;
@@ -123,7 +123,7 @@ nav ul li a:hover {
   color: #fff;
   border: none;
   border-radius: 0;
-  padding: 1.1rem 0;
+  padding: 0.8rem 0;
   font-weight: 600;
   font-size: 1.2rem;
   cursor: pointer;
@@ -137,7 +137,6 @@ nav ul li a:hover {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  border-radius: 18px;
   margin: 2.5rem auto;
   padding: 2.5rem 0 2rem 0;
   background: none;
@@ -149,7 +148,6 @@ nav ul li a:hover {
   inset: 0;
   z-index: -1;
   background: linear-gradient(to bottom, #0a1019 0% 38%, #102027 38% 100%);
-  border-radius: 18px;
 }
 
 .solution-img-wrapper {
@@ -236,7 +234,7 @@ nav ul li a:hover {
 }
 
 .btn-main:hover {
-  background: #00e0d6;
+  background: rgb(2, 178, 169);
 }
 
 .solution-contact-card {
@@ -302,23 +300,32 @@ nav ul li a:hover {
 }
 
 .trainer-section {
-  margin: 3rem 0 2rem 0;
+  margin: 2.5rem auto;
 }
 
 .trainer-header-flex {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 2.5rem;
   margin-bottom: 2.7rem;
 }
 
 .trainer-header-img img {
-  width: 210px;
-  height: 110px;
+  width: 360px;
+  height: 130px;
   object-fit: cover;
-  border-radius: 48px 48px 48px 48px/60px 60px 60px 60px;
-  /* Atur border-radius agar mirip oval */
+  border-radius: 60px;
   display: block;
+  margin-top: 1.5rem;
+  margin-right: 5rem;
+}
+
+.trainer-header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .trainer-header-content h2 {
@@ -326,63 +333,65 @@ nav ul li a:hover {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .trainer-header-content p {
-  color: #b8c0cc;
+  color: #fff;
   font-size: 1rem;
   margin: 0;
   line-height: 1.5;
-  max-width: 480px;
+  max-width: 650px;
+  text-align: left;
 }
 
 .trainer-grid {
   display: flex;
-  gap: 2rem;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .trainer-card {
-  background: #161d2b;
-  border-radius: 16px 16px 32px 32px;
-  padding: 1rem 1rem 0.7rem 1rem;
-  width: 180px;
+  padding: 1rem;
+  width: 252px;
   text-align: left;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  transition: transform 0.2s;
   position: relative;
-}
-
-.trainer-card img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 16px 16px 32px 32px;
-  margin-bottom: 0.7rem;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .trainer-card h4 {
   color: #fff;
-  font-size: 1.08rem;
-  font-weight: 600;
-  margin: 0;
-  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
   padding-left: 2px;
 }
 
+.trainer-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 0;
+  display: block;
+  box-shadow: none;
+  border: none;
+}
+
 .member-section {
-  margin: 3rem 0 2rem 0;
+  margin: 2.5rem auto;
 }
 
 .member-section h2 {
   text-align: center;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 
 .member-grid {
@@ -393,15 +402,16 @@ nav ul li a:hover {
 }
 
 .member-card {
-  background: #161d2b;
+  background: #fff;
   border-radius: 16px;
-  padding: 1.2rem 1.1rem;
-  width: 320px;
+  padding: 1.2rem 1.5rem;
+  width: 300px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  color: #fff;
+  color: #000000;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  margin-bottom: 3rem;
 }
 
 .member-info {
@@ -425,90 +435,104 @@ nav ul li a:hover {
 }
 
 .member-info span {
-  font-size: 0.9rem;
-  color: #b8c0cc;
+  font-size: 0.8rem;
+  color: #000000;
 }
 
 .member-card p {
-  font-size: 1rem;
-  color: #b8c0cc;
+  font-size: 0.8rem;
+  color: #000000;
   margin: 0;
 }
 
 .cta-section {
-  background: #1bc9c9;
-  padding: 1.2rem 0;
-  margin: 2.5rem 0 0 0;
+  background: #23c3c9;
+  padding: 0.5rem 0;
+  margin: 0;
 }
 
 .cta-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
 }
 
 .cta-flex span {
   color: #fff;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Poppins', serif;
 }
 
 .btn-cta {
-  background: #fff;
-  color: #1bc9c9;
+  background: #ffd600;
+  color: #fff;
   border: none;
-  border-radius: 8px;
-  padding: 0.7rem 1.7rem;
+  border-radius: 9px;
+  padding: 0.3rem 1rem;
   font-weight: 700;
   font-size: 1rem;
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
+  box-shadow: none;
 }
 
 .btn-cta:hover {
-  background: #00e0d6;
+  background: #dcb723;
   color: #fff;
 }
 
 .main-footer {
-  background: #111722;
-  padding: 1.5rem 0 0.7rem 0;
-  color: #b8c0cc;
+  background: #178085;
+  padding: 2rem 0 2rem 0;
+  color: #fff;
+  text-align: center;
 }
 
 .footer-flex {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
-.footer-brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.footer-brand .logo-img {
+  width: 160px;
+  height: 38px;
+  object-fit: contain;
 }
 
 .footer-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 1.2rem;
 }
 
 .footer-links a {
-  color: #b8c0cc;
+  color: #fff;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: color 0.2s;
 }
 
 .footer-links a:hover {
-  color: #1bc9c9;
+  color: #ffd600;
+}
+
+.footer-line {
+  border: none;
+  border-top: 2px solid #AAA6A6;
+  margin-bottom: 1.8rem;
+  width: 90%;
+  opacity: 0.4;
 }
 
 .footer-copy {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 900px) {
@@ -523,25 +547,109 @@ nav ul li a:hover {
   }
 }
 
+@media (max-width: 900px) {
+  .solution-flex {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+  .solution-img {
+    width: 100%;
+    height: 160px;
+  }
+  .solution-contact-card {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+  }
+  .trainer-header-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  .trainer-header-img img {
+    width: 100%;
+    height: 90px;
+    border-radius: 32px;
+    margin: 0 0 1rem 0;
+  }
+  .trainer-grid {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .trainer-card {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 1.5rem;
+  }
+  .member-grid {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .member-card {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 1.5rem;
+  }
+  .cta-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .cta-flex span {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .btn-cta {
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem 0;
+    font-size: 1rem;
+  }
+  .main-footer {
+    padding: 1.2rem 0 1.2rem 0;
+  }
+  .footer-flex {
+    gap: 0.8rem;
+  }
+  .footer-brand .logo-img {
+    width: 120px;
+    height: 28px;
+  }
+  .footer-links {
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+  }
+  .footer-line {
+    width: 98%;
+    margin-bottom: 1rem;
+  }
+  .footer-copy {
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 700px) {
   .hero-content-row {
     flex-direction: column;
-    gap: 1.2rem;
-    padding: 1.5rem 1rem 1rem 1rem;
+    gap: 1rem;
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
   }
   .hero-content-row h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .tab-btn {
-    font-size: 1rem;
-    padding: 0.9rem 0;
+    font-size: 0.95rem;
+    padding: 0.7rem 0;
   }
   .hero-img {
-    height: 160px;
+    height: 110px;
   }
   nav ul {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.7rem;
     background: #111722;
     position: absolute;
     top: 60px;
@@ -557,34 +665,20 @@ nav ul li a:hover {
     display: block;
   }
   .solution-img {
-    height: 140px;
+    height: 90px;
   }
   .solution-content h2 {
-    font-size: 1.3rem;
-  }
-  .trainer-header-flex {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: flex-start;
+    font-size: 1rem;
   }
   .trainer-header-img img {
-    width: 100%;
-    height: 110px;
-    border-radius: 32px;
-  }
-  .trainer-grid {
-    gap: 1rem;
+    height: 70px;
   }
   .trainer-card {
-    width: 100%;
-    max-width: 320px;
+    max-width: 100%;
+    padding: 1rem 0.5rem;
   }
-}
-::-webkit-scrollbar {
-  width: 8px;
-  background: #101726;
-}
-::-webkit-scrollbar-thumb {
-  background: #1bc9c9;
-  border-radius: 8px;
+  .member-card {
+    max-width: 100%;
+    padding: 1rem 0.5rem;
+  }
 }
